@@ -11,6 +11,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class ViewProduct {
 	private ViewItems items;
 	public ViewItems getItems() {
@@ -51,14 +55,12 @@ public class ViewProduct {
 				list.add(product);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 				rs.close();
 				stmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
@@ -86,14 +88,12 @@ public class ViewProduct {
 				list.add(product);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 				rs.close();
 				stmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

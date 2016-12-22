@@ -1,11 +1,9 @@
-/**
- * 
- */
+
 package com.moze.pojo;
 
 /**
- * @author Administrator
- *
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class Product {
 	

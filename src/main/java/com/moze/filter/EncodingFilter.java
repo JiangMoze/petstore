@@ -12,6 +12,10 @@ import javax.servlet.Filter;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class EncodingFilter implements Filter {
 
 	/**
@@ -31,29 +35,22 @@ public class EncodingFilter implements Filter {
 	}
 
 
-	/*
-	 * ���й��˴��������������Ҫ����Ҳ���Ի�ó�ʼ������
-	 * @see javax.servlet.Filter#doFilter(javax.servlet.ServletRequest, javax.servlet.ServletResponse, javax.servlet.FilterChain)
-	 */
 
 	public void doFilter(ServletRequest srequest, ServletResponse sresponse,
 			FilterChain chain) throws IOException, ServletException {
-		// TODO Auto-generated method stub
-	
-//		HttpServletRequest�ӿ��Ǽ̳���ServletRequest�ӿڵġ������˺�HTTP��ص�һЩ������   
+
 
 		HttpServletRequest request=(HttpServletRequest)srequest;
 		request.setCharacterEncoding(targetEncoding);
-		
-		//�Ѵ���Ȩ��������һ��,����һ��������������
+
 		chain.doFilter(srequest, sresponse);
 		
 	}
 
 	public void init(FilterConfig config) throws ServletException {
-		// TODO Auto-generated method stub
+
 		this.filterConfig=config;
-		this.targetEncoding=config.getInitParameter("encoding");//ȡ�������ļ��ı���
+		this.targetEncoding=config.getInitParameter("encoding");
 		
 		
 	}

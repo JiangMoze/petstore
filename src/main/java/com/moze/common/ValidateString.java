@@ -1,13 +1,10 @@
-/**
- *
- */
 package com.moze.common;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 /**
- * @author Administrator
- *
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class ValidateString {
     /**

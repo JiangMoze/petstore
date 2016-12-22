@@ -1,5 +1,9 @@
 package com.moze.pojo;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class Inventory {
 	private String itemid;
 	public String getItemid() {

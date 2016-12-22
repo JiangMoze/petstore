@@ -11,7 +11,10 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class ViewCategory {
 	private Connection getConn(){
 
@@ -47,14 +50,12 @@ public class ViewCategory {
 				list.add(category);
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 				rs.close();
 				stmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

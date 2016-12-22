@@ -6,8 +6,8 @@ package com.moze.pojo;
 import java.io.Serializable;
 
 /**
- * @author Administrator
- *
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class Cart implements Serializable{
 	private String itemid;

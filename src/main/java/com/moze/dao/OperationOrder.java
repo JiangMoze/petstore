@@ -11,7 +11,10 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.List;
 
-
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class OperationOrder {
 	private int orderid=1000;
 	private Connection getConn(){
@@ -33,14 +36,12 @@ public class OperationOrder {
 			}
 
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 				rs.close();
 				stmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 
@@ -48,7 +49,7 @@ public class OperationOrder {
 
 
 	}
-	//	/存储订单商品明细
+	//存储订单商品明细
 	public boolean saveOrderDetail(List<Cart> cartList){
 		String sql="insert into lineitem(orderid,itemid,quantity,unitprice) " +
 				"values(?,?,?,?)";
@@ -67,7 +68,6 @@ public class OperationOrder {
 					flag=true;
 				}
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 			finally{
@@ -75,7 +75,6 @@ public class OperationOrder {
 
 					pstmt.close();
 				} catch (SQLException e) {
-					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 
@@ -108,14 +107,12 @@ public class OperationOrder {
 				flag=true;
 			}
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 
 				pstmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

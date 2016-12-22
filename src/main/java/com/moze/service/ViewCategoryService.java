@@ -12,9 +12,12 @@ import com.moze.dao.ViewCategory;
 import com.moze.dao.ViewProduct;
 import com.moze.pojo.Product;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class ViewCategoryService {
 	public void getProductList(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub		
 		String category=(String)request.getParameter("category");
 		List <Product> list=showProductByCategory(category);
 		request.setAttribute("productList", list);

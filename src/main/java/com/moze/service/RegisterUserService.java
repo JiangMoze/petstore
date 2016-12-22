@@ -12,8 +12,8 @@ import com.moze.dao.RegisterUser;
 import com.moze.pojo.User;
 
 /**
- * @author Administrator
- *
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class RegisterUserService {
 	//存储用户

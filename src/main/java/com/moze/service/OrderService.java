@@ -9,6 +9,10 @@ import com.moze.dao.OperationOrder;
 import com.moze.pojo.Cart;
 import com.moze.pojo.Order;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class OrderService {
 	//保存订单
 	@SuppressWarnings("unchecked")

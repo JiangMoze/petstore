@@ -10,6 +10,10 @@ import com.moze.dao.ViewProduct;
 import com.moze.pojo.Item;
 import com.moze.pojo.Product;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class ViewProductService {
 	
 	public static long getSerialversionuid() {
@@ -27,7 +31,6 @@ public class ViewProductService {
 	
 	}
 	public void getItemList(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub		
 		String productId=(String)request.getParameter("productid");
 		List <Item> list=showItemByProductId(productId);
 
@@ -39,7 +42,6 @@ public class ViewProductService {
 	}
 
 	private List<Item> showItemByProductId(String productId) {
-		// TODO Auto-generated method stub
 		ViewProduct pro=new ViewProduct();
 		ViewItems items=new ViewItems();
 		pro.setItems(items);

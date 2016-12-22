@@ -8,7 +8,8 @@ import java.sql.SQLException;
 import java.util.Properties;
 
 /**
- * Created by Administrator on 2016/9/30.
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class DruidDB {
     private static Connection conn;//声明连接

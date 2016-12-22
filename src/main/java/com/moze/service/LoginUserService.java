@@ -8,15 +8,14 @@ import javax.servlet.http.HttpSession;
 import com.moze.dao.LoginUser;
 import com.moze.pojo.User;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class LoginUserService {
 	private static final long serialVersionUID = 1L;
 
-
-
-
-
 	public boolean loginUser(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub		
 		LoginUser userdao=new LoginUser();	
 		User user=new User();
 		user.setUsername(request.getParameter("username"));

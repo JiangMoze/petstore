@@ -10,7 +10,10 @@ import com.moze.db.DruidDB;
 import com.moze.pojo.Banner;
 import com.moze.pojo.Profile;
 import com.moze.pojo.User;
-
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class LoginUser {
 	private Connection getConn(){	
 
@@ -55,14 +58,12 @@ public class LoginUser {
 			}	
 			
 		} catch (SQLException e) {
-			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}finally{
 			try {
 				rs.close();
 				stmt.close();
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 

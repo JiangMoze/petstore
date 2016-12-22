@@ -12,12 +12,11 @@ import com.moze.dao.RegisterUser;
 import com.moze.pojo.User;
 
 /**
- * @author Administrator
- *
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
  */
 public class EditUserService {
 	public void editUser(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub		
 		HttpSession session = request.getSession();
 		RegisterUser userDAO=new RegisterUser();
 		User user=new User();

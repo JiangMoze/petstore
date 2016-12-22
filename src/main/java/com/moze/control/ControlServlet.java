@@ -1,7 +1,6 @@
 package com.moze.control;
 
 import java.io.IOException;
-import java.io.PrintWriter;
 import java.util.HashMap;
 
 import javax.servlet.RequestDispatcher;
@@ -13,14 +12,12 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import com.moze.service.*;
-
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 
 public class ControlServlet extends HttpServlet {
-
-	/**
-	 * Constructor of the object.
-	 */
-
 	private HashMap<String,String> forwards;
 	private final static String VIEWCATEGORY="viewCategory";
 	private final static String VIEWPRODUCT="viewProduct";
@@ -46,49 +43,24 @@ public class ControlServlet extends HttpServlet {
 	 * Destruction of the servlet. <br>
 	 */
 	public void destroy() {
-		super.destroy(); // Just puts "destroy" string in log
-		// Put your code here
+		super.destroy();
 	}
 
-	/**
-	 * The doGet method of the servlet. <br>
-	 *
-	 * This method is called when a form has its tag value method equals to get.
-	 *
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
-	 */
+
 	public void doGet(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		processRequest(request,response);
 
 	}
 
-	/**
-	 * The doPost method of the servlet. <br>
-	 *
-	 * This method is called when a form has its tag value method equals to post.
-	 *
-	 * @param request the request send by the client to the server
-	 * @param response the response send by the server to the client
-	 * @throws ServletException if an error occurred
-	 * @throws IOException if an error occurred
-	 */
+
 	public void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		processRequest(request,response);
 	}
 
-	/**
-	 * Initialization of the servlet. <br>
-	 *
-	 * @throws ServletException if an error occurs
-	 */
-	@SuppressWarnings("unchecked")
+
 	public void init(ServletConfig config) throws ServletException {
-		// Put your code here,在第一次链接时或重启服务器再重新链接时运行该初始化
 
 		super.init(config);
 		forwards=new HashMap<String,String>();

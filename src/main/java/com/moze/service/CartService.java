@@ -10,10 +10,11 @@ import java.util.List;
 
 import javax.servlet.http.HttpServletRequest;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class CartService {
-	/**
-	 *
-	 */
 	private static final long serialVersionUID = 1L;
 	public static List<Cart> cartlist=cartlist=new ArrayList<Cart>();
 	public static List<String> itemidlist=itemidlist=new ArrayList<String>();
@@ -25,7 +26,6 @@ public class CartService {
 	}
 
 	public void cartmain() throws Exception {
-		// TODO Auto-generated method stub
 		String itemId=(String)request.getParameter("itemid");
 		//新点击连接添加一个新的itemid号。
 
@@ -139,7 +139,6 @@ public class CartService {
 
 	}
 	private Item showItemByItemId(String itemId) {
-		// TODO Auto-generated method stub
 		ViewItems vitem=new ViewItems();
 		Item item=vitem.showItem(itemId);
 		return item;

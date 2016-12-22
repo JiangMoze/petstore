@@ -6,9 +6,12 @@ import javax.servlet.http.HttpServletResponse;
 import com.moze.dao.ViewItems;
 import com.moze.pojo.Item;
 
+/**
+ * Created by IntelliJ IDEA.
+ * Created by 蒋东雨 on 2016/12/07.
+ */
 public class ViewItemService {
 	public void getItem(HttpServletRequest request, HttpServletResponse response) throws Exception {
-		// TODO Auto-generated method stub
 		
 		String itemId=(String)request.getParameter("itemid");
 		Item item=showItemByItemId(itemId);
@@ -17,7 +20,6 @@ public class ViewItemService {
 	}
 	
 	private Item showItemByItemId(String itemId) {
-		// TODO Auto-generated method stub
 		ViewItems vitem=new ViewItems();		
 		Item item=vitem.showItem(itemId);
 		return item;
